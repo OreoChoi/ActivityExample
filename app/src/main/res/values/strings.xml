@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ActivityExample</string>
+    <string name="bundle">string %1$s \nbyte %2$s \nint %3$s \nlong %4$s \nchar %5$s \nfloat %6$s \ndouble %7$s \nwash %8$s</string>
 </resources>

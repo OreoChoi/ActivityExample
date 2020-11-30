@@ -5,7 +5,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
 open class BaseActivity:AppCompatActivity(){
-    val TAG:String = "LifeCycle"
+    open val TAG:String = "LifeCycle"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG,"onCreate")
@@ -35,6 +35,11 @@ open class BaseActivity:AppCompatActivity(){
     override fun onSaveInstanceState(outState: Bundle) {
         Log.d(TAG,"onSaveInstanceState")
         super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        Log.d(TAG,"onRestoreInstanceState")
+        super.onRestoreInstanceState(savedInstanceState)
     }
 
     override fun onStop() {
